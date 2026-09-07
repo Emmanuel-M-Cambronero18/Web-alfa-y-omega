@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa y Omega</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes somos</a></li>
+                    <li><a href="#proposito">Nuestro propósito</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#actividades">Actividades</a></li>
+                    <li><a href="#oracion">Pide oración</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>  
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-overlay">
+            <h1>Bienvenido<br>a Alfa y Omega</h1>
+            <p>Un lugar para conocer la palabra de Cristo y crecer en comunidad</p>
+            <a href="#quienes-somos" class="hero-btn">Conócenos</a>
+            <div class="countdown" id="countdown">
+                <p class="countdown-label">Próximo culto en:</p>
+                <div class="countdown-numbers" id="countdown-numbers">Calculando...</div>
+            </div>
+        </div>
+    </section>
+
+   <section id="quienes-somos" class="section">
+    <div class="section-container about-container">
+        <div class="about-text">
+            <h2>Quiénes somos</h2>
+            <p>En Alfa y Omega creemos que la iglesia es una familia, no un edificio. Desde [año de fundación], nos reunimos como comunidad de fe para adorar a Dios, estudiar Su Palabra y caminar juntos en cada etapa de la vida.</p>
+            <p>Somos una congregación que valora la cercanía, la enseñanza bíblica y el servicio genuino a quienes nos rodean. Aquí encontrarás un lugar donde tu historia importa, sin importar de dónde vengas.</p>
+        </div>
+        <div class="about-image">
+            <img src="imagenes/nosotrosb.jpg" alt="Congregación de Alfa y Omega reunida en el templo">
+        </div>
+    </div>
+</section>
+
+    <section id="proposito" class="section section-alt">
+        <div class="section-container">
+            <h2>Nuestro propósito</h2>
+            <div class="purpose-grid">
+                <div class="purpose-card">
+                    <h3>Adorar</h3>
+                    <p>Buscamos la presencia de Dios con corazones sinceros, a través de la alabanza y la Palabra.</p>
+                </div>
+                <div class="purpose-card">
+                    <h3>Conectar</h3>
+                    <p>Creemos en el poder de la comunidad. Aquí nadie camina solo.</p>
+                </div>
+                <div class="purpose-card">
+                    <h3>Servir</h3>
+                    <p>Ponemos nuestros dones al servicio de la iglesia y de quienes nos rodean.</p>
+                </div>
+                <div class="purpose-card">
+                    <h3>Discipular</h3>
+                    <p>Acompañamos a cada persona a crecer en su fe, un paso a la vez.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="section">
+        <div class="section-container">
+            <h2>Ubicación</h2>
+                <div class="location-content">
+                <div class="location-info">
+                    <p><span class="location-icon">📍</span><strong>Dirección:</strong><br>[Escribe la dirección completa aquí]</p>
+                    <p><span class="location-icon">🧭</span><strong>Referencia:</strong><br>Vuelta de Jorco, San José, Aserrí</p>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=9.777798905637601,-84.12844987917664" target="_blank" class="directions-btn">Cómo llegar</a>
+                </div>   
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.03817820981203!2d-84.12844987917664!3d9.777798905637601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2scr!4v1788817220300!5m2!1ses-419!2scr"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="horarios" class="section section-alt">
+        <div class="section-container">
+            <h2>Horarios</h2>
+            <div class="shedule-list">
+                <div class="shedule-item">
+                    <h3>Domingo</h3>
+                    <p>10:00 a.m. - Culto de adoración</p>
+                </div>
+                <div class="shedule-item">
+                    <h3>Miércoles</h3>
+                    <p>6:00 p.m. - Estudio bíblico y oración</p>
+                </div>
+            </div>
+            <div class="first-visit-note">
+                <p>¿Es tu primera vez? Ven 15 minutos antes — alguien te va a recibir con gusto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="actividades" class="section">
+        <div class="section-container">
+            <h2>Próximas actividades</h2>
+            <div class="activities-grid" id="activities-grid">
+            <!-- Las tarjetas se generan automáticamente con JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="oracion" class="section section-alt">
+        <div class="section-container">
+            <h2>Pide oración</h2>
+            <p class="prayer-intro">Si estás pasando por un momento difícil o quieres compartir algo que Dios está haciendo en tu vida, escríbenos. Oraremos por ti.</p>
+
+            <form action="https://formspree.io/f/xkjnqyja" method="POST" class="prayer-form" id="prayer-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contacto">Correo o teléfono (opcional)</label>
+                    <input type="text" id="contacto" name="contacto">
+                </div>
+
+                <div class="form-group">
+                    <label for="peticion">Tu petición de oración</label>
+                    <textarea id="peticion" name="peticion" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="privacidad" value="privado">
+                        Prefiero que este pedido se mantenga en privado
+                    </label>
+                </div>
+
+                <button type="submit" class="prayer-submit">Enviar petición</button>
+            </form>
+            <div class="prayer-success" id="prayer-success">
+                <p>Gracias por confiarnos tu petición. Vamos a orar por ti. 🙏</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/89133908" target="_blank" class="whatsapp-float" aria-label="Escríbenos por WhatsApp">
+    <span>💬</span>
+    </a>
+
+
+    <script src="actividades.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
