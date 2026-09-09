@@ -98,3 +98,38 @@ if (prayerForm) {
         });
     });
 }
+
+function renderizarGaleria() {
+    const contenedor = document.getElementById('gallery-grid');
+
+    contenedor.innerHTML = galeriaFotos.map((foto, indice) => `
+        <div class="gallery-item" data-indice="${indice}">
+            <img src="${foto.archivo}" alt="${foto.descripcion}" loading="lazy">
+        </div>
+    `).join('');
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const indice = item.getAttribute('data-indice');
+            abrirLightbox(indice);
+        });
+    });
+}
+
+function abrirLightbox(indice) {
+    const foto = galeriaFotos[indice];
+    document.getElementById('lightbox-img').src = foto.archivo;
+    document.getElementById('lightbox-caption').textContent = foto.descripcion;
+    document.getElementById('lightbox').classList.add('active');
+}
+
+function cerrarLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+}
+
+document.getElementById('lightbox-close').addEventListener('click', cerrarLightbox);
+document.getElementById('lightbox').addEventListener('click', (evento) => {
+    if (evento.target.id === 'lightbox') cerrarLightbox();
+});
+
+renderizarGaleria();

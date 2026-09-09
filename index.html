@@ -17,6 +17,7 @@
                     <li><a href="#ubicacion">Ubicación</a></li>
                     <li><a href="#horarios">Horarios</a></li>
                     <li><a href="#actividades">Actividades</a></li>
+                    <li><a href="#galeria">Galería</a></li>
                     <li><a href="#oracion">Pide oración</a></li>
                 </ul>
             </nav>
@@ -29,7 +30,7 @@
     </header>
     <section id="inicio" class="hero">
         <div class="hero-overlay">
-            <h1>Bienvenido<br>a Alfa y Omega</h1>
+            <h1>Bienvenido<br>a iglesia casa de adoración Alfa y Omega</h1>
             <p>Un lugar para conocer la palabra de Cristo y crecer en comunidad</p>
             <a href="#quienes-somos" class="hero-btn">Conócenos</a>
             <div class="countdown" id="countdown">
@@ -81,7 +82,7 @@
             <h2>Ubicación</h2>
                 <div class="location-content">
                 <div class="location-info">
-                    <p><span class="location-icon">📍</span><strong>Dirección:</strong><br>[Escribe la dirección completa aquí]</p>
+                    <p><span class="location-icon">📍</span><strong>Dirección:</strong><br>500 metros al sur de la Escuela Floria Zeledón Trejos</p>
                     <p><span class="location-icon">🧭</span><strong>Referencia:</strong><br>Vuelta de Jorco, San José, Aserrí</p>
                     <a href="https://www.google.com/maps/dir/?api=1&destination=9.777798905637601,-84.12844987917664" target="_blank" class="directions-btn">Cómo llegar</a>
                 </div>   
@@ -128,6 +129,21 @@
         </div>
     </section>
 
+    <section id="galeria" class="section section-alt">
+        <div class="section-container">
+            <h2>Galería</h2>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Se genera automático con JS -->
+            </div>
+        </div>
+    </section>
+
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="" id="lightbox-img">
+    <p id="lightbox-caption"></p>
+</div>
+
     <section id="oracion" class="section section-alt">
         <div class="section-container">
             <h2>Pide oración</h2>
@@ -170,6 +186,8 @@
 
 
     <script src="actividades.js"></script>
+    <script src="galeria.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
