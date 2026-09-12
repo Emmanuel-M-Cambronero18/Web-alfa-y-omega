@@ -52,7 +52,7 @@ body {
     height: 90vh;
     min-height: 500px;
     background-image: linear-gradient(rgba(15,40,70,0.55), rgba(15,40,70,0.55)),
-                        url("imagenes/iglesiab.jpg");
+                        url("imagenes/iglesia.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
